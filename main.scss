@@ -12,6 +12,7 @@ body {
 	height: 100vh;
 	font-size: 1.6rem;
 	font-family: 'Montserrat', sans-serif;
+	color: #fff;
 }
 
 .weather {
@@ -31,7 +32,6 @@ body {
 		width: 100%;
 		padding: 4rem;
 		padding-bottom: 0;
-		color: #fff;
 
 		&-title {
 			font-weight: 900;
@@ -66,17 +66,21 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		width: 50%;
+		width: 70%;
+		max-width: 100rem;
 		height: 60%;
-		margin: 3rem;
-		padding: 2rem;
+		margin: 6rem;
+		padding: 1rem;
 		border: 3px solid #fff;
+		border-radius: 5%;
+		background-color: rgba($color: #000000, $alpha: 0.6);
 
 		&-top {
 			display: flex;
 			align-items: center;
 			justify-content: space-evenly;
-			color: #fff;
+			width: 100%;
+			margin-top: 8rem;
 
 			&-city {
 				font-size: 4rem;
@@ -84,10 +88,40 @@ body {
 				font-weight: 600;
 				font-style: italic;
 			}
+
+			&-date {
+				font-size: 2rem;
+			}
+		}
+
+		&-middle {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			margin: 5rem 0;
+		}
+
+		&-headings,
+		&-values {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			text-align: center;
+			width: 100%;
+			padding: 3rem 0;
+
+			p {
+				width: 16%;
+			}
 		}
 
 		&-headings {
-			display: flex;
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			border-bottom: 2px solid #fff;
+			border-top: 2px solid #fff;
+            
 		}
 
 		&-values {
