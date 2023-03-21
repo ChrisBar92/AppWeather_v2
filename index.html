@@ -27,12 +27,12 @@
         <p class="weather__header-warning">Musisz wpisać miasto</p>
         <div class="weather__main">
             <div class="weather__main-top">
-                <p class="weather__main-top-city">Kraków</p>
-                <div class="weather__main-top-date">10.05.22</div>
+                <p class="weather__main-top-city"></p>
+                <div class="weather__main-top-date"></div>
             </div>
             <div class="weather__main-middle"><img class="weather__main-middle-icon" src=""
                     alt="ikona przedstawiająca pogodę"></div>
-            <div class="weather__main-headings">
+            <div class="weather__main-headings desktop">
                 <p class="description">Pogoda:</p>
                 <p class="temperature">Temperatura:</p>
                 <p class="feel-temp">Odczuwalna:</p>
@@ -40,21 +40,40 @@
                 <p class="wind">Wiatr:</p>
                 <p class="humidity">Wilgotność:</p>
             </div>
-            <div class="weather__main-values">
-                <p class="value-description">slonce</p>
-                <p class="value-temperature">20</p>
-                <p class="value-feel-temp">58</p>
-                <p class="value-pressure">-4</p>
+            <div class="weather__main-values desktop">
+                <p class="value-description"></p>
+                <p class="value-temperature"></p>
+                <p class="value-feel-temp"></p>
+                <p class="value-pressure"></p>
+                <p class="value-wind"></p>
+                <p class="value-humidity"></p>
+            </div>
+            <div class="weather__main-headings mobile">
+                <p class="description">Pogoda:</p>
+                <p class="temperature">Temperatura:</p>
+                <p class="feel-temp">Odczuwalna:</p>
+            </div>
+            <div class="weather__main-values mobile">
+                <p class="value-description">10</p>
+                <p class="value-temperature">10</p>
+                <p class="value-feel-temp">10</p>
+            </div>
+            <div class="weather__main-headings mobile">
+                <p class="pressure">Ciśnienie:</p>
+                <p class="wind">Wiatr:</p>
+                <p class="humidity">Wilgotność:</p>
+            </div>
+            <div class="weather__main-values mobile">
+                <p class="value-pressure">10</p>
                 <p class="value-wind">10</p>
-                <p class="value-humidity">67%</p>
+                <p class="value-humidity">10</p>
             </div>
         </div>
-    </div>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>

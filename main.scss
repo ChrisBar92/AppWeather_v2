@@ -54,7 +54,7 @@ body {
 
 	&__header-warning {
 		width: 100%;
-		margin-right: 37rem;
+		margin-right: 28rem;
 		margin-top: 1rem;
 		text-align: right;
 		color: #f00;
@@ -74,6 +74,10 @@ body {
 		border: 3px solid #fff;
 		border-radius: 5%;
 		background-color: rgba($color: #000000, $alpha: 0.6);
+
+		.mobile {
+			display: none;
+		}
 
 		&-top {
 			display: flex;
@@ -99,7 +103,12 @@ body {
 			justify-content: center;
 			align-items: center;
 			width: 100%;
-			margin: 5rem 0;
+			margin: 2rem 0;
+
+			&-icon {
+				width: 15rem;
+				height: 15rem;
+			}
 		}
 
 		&-headings,
@@ -121,11 +130,147 @@ body {
 			text-transform: uppercase;
 			border-bottom: 2px solid #fff;
 			border-top: 2px solid #fff;
-            
 		}
 
 		&-values {
 			display: flex;
+		}
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.weather {
+		&__main {
+			width: 80%;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.weather {
+		&__header {
+			flex-direction: column;
+
+			&-title {
+				margin: 4rem 0;
+			}
+
+			&-warning {
+				text-align: center;
+				margin: 2rem 0 0;
+			}
+		}
+		&__main {
+			width: 85%;
+
+			&-headings {
+				font-size: 1.2rem;
+			}
+			&-values {
+				font-size: 1.4rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.weather {
+		&__header {
+			flex-direction: column;
+
+			&-title {
+				margin: 4rem 0;
+			}
+
+			&-warning {
+				text-align: center;
+				margin: 2rem 0 0;
+			}
+		}
+		&__main {
+			margin: 3rem;
+			width: 98%;
+
+			&-headings {
+				font-size: 1rem;
+			}
+			&-values {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+	.weather {
+		background-image: url('../images/background640.jpg');
+
+		&__header {
+			flex-direction: column;
+			padding: 2rem;
+			padding-bottom: 1rem;
+
+			&-title {
+				font-weight: 700;
+				margin: 2rem 0;
+				font-size: 2rem;
+			}
+
+			&-input,
+			&-button {
+				font-size: 1.6rem;
+			}
+
+			&-warning {
+				text-align: center;
+				margin: 0;
+			}
+		}
+		&__main {
+			margin: 1rem;
+			width: 98%;
+			height: 70%;
+			justify-content: center;
+
+			.desktop {
+				display: none;
+			}
+
+			.mobile {
+				display: flex;
+				width: 100%;
+
+				p {
+					width: 30%;
+				}
+			}
+
+			&-top {
+				margin-top: 1rem;
+
+				&-city {
+					font-size: 3.2rem;
+				}
+			}
+
+			&-middle {
+				margin: 1rem 0;
+
+				&-icon {
+					height: 10rem;
+					width: 10rem;
+				}
+			}
+
+			&-headings {
+				font-size: 1rem;
+				flex-wrap: wrap;
+
+			}
+			&-values {
+				font-size: 1.2rem;
+		
+			}
 		}
 	}
 }
