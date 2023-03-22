@@ -11,7 +11,6 @@ const currentHumidity = document.querySelectorAll('.value-humidity')
 const currentWind = document.querySelectorAll('.value-wind')
 const currentFeelTemp = document.querySelectorAll('.value-feel-temp')
 
-console.log(cityName.parentElement.parentElement)
 
 const API_LINK = 'https://api.openweathermap.org/data/2.5/weather?q='
 const API_KEY = '&lang=pl&appid=dca2cbeccdf9e75225ebe67b5f301f72'
@@ -32,6 +31,8 @@ const getWeather = () => {
 			const date = new Date(res.data.dt * 1000).toLocaleDateString()
 			const status = Object.assign({}, ...res.data.weather)
 			const icon = status.icon
+
+			// console.log('../images/' + icon + '.png')
 
 			cityName.textContent = res.data.name
 			currentDate.textContent = date
