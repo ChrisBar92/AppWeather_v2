@@ -4,12 +4,14 @@ const warning = document.querySelector('.weather__header-warning')
 const cityName = document.querySelector('.weather__main-top-city')
 const currentDate = document.querySelector('.weather__main-top-date')
 const weatherIcon = document.querySelector('.weather__main-middle-icon')
-const weatherDescription = document.querySelector('.value-description')
-const currentTemperature = document.querySelector('.value-temperature')
-const currentPressure = document.querySelector('.value-pressure')
-const currentHumidity = document.querySelector('.value-humidity')
-const currentWind = document.querySelector('.value-wind')
-const currentFeelTemp = document.querySelector('.value-feel-temp')
+const weatherDescription = document.querySelectorAll('.value-description')
+const currentTemperature = document.querySelectorAll('.value-temperature')
+const currentPressure = document.querySelectorAll('.value-pressure')
+const currentHumidity = document.querySelectorAll('.value-humidity')
+const currentWind = document.querySelectorAll('.value-wind')
+const currentFeelTemp = document.querySelectorAll('.value-feel-temp')
+
+console.log(cityName.parentElement.parentElement)
 
 const API_LINK = 'https://api.openweathermap.org/data/2.5/weather?q='
 const API_KEY = '&lang=pl&appid=dca2cbeccdf9e75225ebe67b5f301f72'
@@ -33,12 +35,12 @@ const getWeather = () => {
 
 			cityName.textContent = res.data.name
 			currentDate.textContent = date
-			currentTemperature.textContent = temp + ' °C'
-			currentFeelTemp.textContent = feelsTemp + ' °C'
-			currentPressure.textContent = pressure + ' hPa'
-			currentWind.textContent = wind + ' km/h'
-			currentHumidity.textContent = humidity + ' %'
-			weatherDescription.textContent = status.description
+			currentTemperature.forEach(item => (item.textContent = temp + ' °C'))
+			currentFeelTemp.forEach(item => (item.textContent = feelsTemp + ' °C'))
+			currentPressure.forEach(item => (item.textContent = pressure + ' hPa'))
+			currentWind.forEach(item => (item.textContent = wind + ' km/h'))
+			currentHumidity.forEach(item => (item.textContent = humidity + ' %'))
+			weatherDescription.forEach(item => (item.textContent = status.description))
 
 			warning.textContent = ''
 			input.value = ''

@@ -138,6 +138,7 @@ body {
   }
   .weather__main {
     width: 85%;
+    height: 60%;
   }
   .weather__main-headings {
     font-size: 1.2rem;
@@ -190,13 +191,9 @@ body {
     margin: 0;
   }
   .weather__main {
-    margin: 1rem;
     width: 98%;
     height: 70%;
     justify-content: center;
-  }
-  .weather__main .desktop {
-    display: none;
   }
   .weather__main .mobile {
     display: flex;
@@ -205,8 +202,11 @@ body {
   .weather__main .mobile p {
     width: 30%;
   }
+  .weather__main .desktop {
+    display: none;
+  }
   .weather__main-top {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .weather__main-top-city {
     font-size: 3.2rem;
@@ -221,6 +221,72 @@ body {
   .weather__main-headings {
     font-size: 1rem;
     flex-wrap: wrap;
+    border: none;
+    border-top: 3px solid #fff;
+  }
+  .weather__main-values {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 299px) {
+  .weather {
+    background-image: url("../images/background640.jpg");
+  }
+  .weather__header {
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+  .weather__header-title {
+    font-weight: 700;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+  }
+  .weather__header-input, .weather__header-button {
+    font-size: 1.2rem;
+  }
+  .weather__header-warning {
+    text-align: center;
+    margin: 0;
+  }
+  .weather__main {
+    padding: 0;
+    width: 98%;
+    height: 70%;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .weather__main .mobile {
+    display: flex;
+    width: 100%;
+  }
+  .weather__main .mobile p {
+    width: 33%;
+  }
+  .weather__main .desktop {
+    display: none;
+  }
+  .weather__main-top {
+    margin-top: 2rem;
+  }
+  .weather__main-top-city {
+    font-size: 2.6rem;
+  }
+  .weather__main-top-date {
+    font-size: 1.6rem;
+  }
+  .weather__main-middle {
+    margin: 1rem 0;
+  }
+  .weather__main-middle-icon {
+    height: 10rem;
+    width: 10rem;
+  }
+  .weather__main-headings {
+    font-size: 1rem;
+    flex-wrap: wrap;
+    border: none;
+    border-top: 3px solid #fff;
   }
   .weather__main-values {
     font-size: 1.2rem;

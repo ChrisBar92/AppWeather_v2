@@ -162,6 +162,7 @@ body {
 		}
 		&__main {
 			width: 85%;
+			height: 60%;
 
 			&-headings {
 				font-size: 1.2rem;
@@ -227,14 +228,9 @@ body {
 			}
 		}
 		&__main {
-			margin: 1rem;
 			width: 98%;
 			height: 70%;
 			justify-content: center;
-
-			.desktop {
-				display: none;
-			}
 
 			.mobile {
 				display: flex;
@@ -244,9 +240,12 @@ body {
 					width: 30%;
 				}
 			}
+			.desktop {
+				display: none;
+			}
 
 			&-top {
-				margin-top: 1rem;
+				margin-top: 2rem;
 
 				&-city {
 					font-size: 3.2rem;
@@ -265,11 +264,90 @@ body {
 			&-headings {
 				font-size: 1rem;
 				flex-wrap: wrap;
-
+				border: none;
+				border-top: 3px solid #fff;
 			}
+
 			&-values {
 				font-size: 1.2rem;
-		
+			}
+		}
+	}
+}
+
+@media (max-width: 299px) {
+	.weather {
+		background-image: url('../images/background640.jpg');
+
+		&__header {
+			flex-direction: column;
+			padding: 1rem;
+			padding-bottom: 1rem;
+
+			&-title {
+				font-weight: 700;
+				margin: 2rem 0;
+				font-size: 1.6rem;
+			}
+
+			&-input,
+			&-button {
+				font-size: 1.2rem;
+			}
+
+			&-warning {
+				text-align: center;
+				margin: 0;
+			}
+		}
+		&__main {
+			padding: 0;
+			width: 98%;
+			height: 70%;
+			justify-content: center;
+			margin: 02rem 0;
+
+			.mobile {
+				display: flex;
+				width: 100%;
+
+				p {
+					width: 33%;
+				}
+			}
+			.desktop {
+				display: none;
+			}
+
+			&-top {
+				margin-top: 2rem;
+
+				&-city {
+					font-size: 2.6rem;
+				}
+				&-date {
+					font-size: 1.6rem;
+				}
+			}
+
+			&-middle {
+				margin: 1rem 0;
+
+				&-icon {
+					height: 10rem;
+					width: 10rem;
+				}
+			}
+
+			&-headings {
+				font-size: 1rem;
+				flex-wrap: wrap;
+				border: none;
+				border-top: 3px solid #fff;
+			}
+
+			&-values {
+				font-size: 1.2rem;
 			}
 		}
 	}
