@@ -11,7 +11,6 @@ const currentHumidity = document.querySelectorAll('.value-humidity')
 const currentWind = document.querySelectorAll('.value-wind')
 const currentFeelTemp = document.querySelectorAll('.value-feel-temp')
 
-
 const API_LINK = 'https://api.openweathermap.org/data/2.5/weather?q='
 const API_KEY = '&lang=pl&appid=dca2cbeccdf9e75225ebe67b5f301f72'
 const API_UNITS = '&units=metric'
@@ -32,8 +31,6 @@ const getWeather = () => {
 			const status = Object.assign({}, ...res.data.weather)
 			const icon = status.icon
 
-			// console.log('../images/' + icon + '.png')
-
 			cityName.textContent = res.data.name
 			currentDate.textContent = date
 			currentTemperature.forEach(item => (item.textContent = temp + ' °C'))
@@ -47,9 +44,7 @@ const getWeather = () => {
 			input.value = ''
 
 			if (status.id >= 200 && status.id < 805) {
-				weatherIcon.setAttribute('src', '../images/' + icon + '.png')
-			} else {
-				weatherIcon.setAttribute('src', './img/unknown.png')
+				weatherIcon.setAttribute('src', './images/' + icon + '.png')
 			}
 		})
 		.catch(() => (warning.textContent = 'Wpisz poprawną nazwę miasta!'))
