@@ -140,6 +140,9 @@ body {
     width: 85%;
     height: 60%;
   }
+  .weather__main-top {
+    padding: 2rem;
+  }
   .weather__main-headings {
     font-size: 1.2rem;
   }
@@ -161,6 +164,9 @@ body {
   .weather__main {
     margin: 3rem;
     width: 98%;
+  }
+  .weather__main-top {
+    padding: 2rem;
   }
   .weather__main-headings {
     font-size: 1rem;
@@ -206,10 +212,14 @@ body {
     display: none;
   }
   .weather__main-top {
-    margin-top: 2rem;
+    margin-top: 0;
+    padding: 1rem;
   }
   .weather__main-top-city {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
+  }
+  .weather__main-top-date {
+    font-size: 1.8rem;
   }
   .weather__main-middle {
     margin: 1rem 0;
@@ -223,9 +233,11 @@ body {
     flex-wrap: wrap;
     border: none;
     border-top: 3px solid #fff;
+    padding: 1rem;
   }
   .weather__main-values {
     font-size: 1.2rem;
+    padding: 1rem;
   }
 }
 @media (max-width: 299px) {
@@ -267,13 +279,14 @@ body {
     display: none;
   }
   .weather__main-top {
-    margin-top: 2rem;
+    margin: 0;
+    padding: 1rem;
   }
   .weather__main-top-city {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
   .weather__main-top-date {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .weather__main-middle {
     margin: 1rem 0;
@@ -290,5 +303,9 @@ body {
   }
   .weather__main-values {
     font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  .weather__main-values p {
+    padding-bottom: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
