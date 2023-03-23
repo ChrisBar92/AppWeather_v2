@@ -81,9 +81,9 @@ body {
 }
 .weather__main-top-city {
   font-size: 4rem;
-  text-transform: uppercase;
   font-weight: 600;
   font-style: italic;
+  text-transform: uppercase;
 }
 .weather__main-top-date {
   font-size: 2rem;
@@ -112,9 +112,9 @@ body {
 }
 .weather__main-headings {
   font-size: 1.4rem;
-  text-transform: uppercase;
   border-bottom: 2px solid #fff;
   border-top: 2px solid #fff;
+  text-transform: uppercase;
 }
 .weather__main-values {
   display: flex;
@@ -133,8 +133,8 @@ body {
     margin: 4rem 0;
   }
   .weather__header-warning {
-    text-align: center;
     margin: 2rem 0 0;
+    text-align: center;
   }
   .weather__main {
     width: 85%;
@@ -158,12 +158,12 @@ body {
     margin: 4rem 0;
   }
   .weather__header-warning {
-    text-align: center;
     margin: 2rem 0 0;
+    text-align: center;
   }
   .weather__main {
-    margin: 3rem;
     width: 98%;
+    margin: 3rem;
   }
   .weather__main-top {
     padding: 2rem;
@@ -185,16 +185,16 @@ body {
     padding-bottom: 1rem;
   }
   .weather__header-title {
-    font-weight: 700;
     margin: 2rem 0;
     font-size: 2rem;
+    font-weight: 700;
   }
   .weather__header-input, .weather__header-button {
     font-size: 1.6rem;
   }
   .weather__header-warning {
-    text-align: center;
     margin: 0;
+    text-align: center;
   }
   .weather__main {
     width: 98%;
@@ -229,15 +229,15 @@ body {
     width: 10rem;
   }
   .weather__main-headings {
-    font-size: 1rem;
     flex-wrap: wrap;
+    padding: 1rem;
+    font-size: 1rem;
     border: none;
     border-top: 3px solid #fff;
-    padding: 1rem;
   }
   .weather__main-values {
-    font-size: 1.2rem;
     padding: 1rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 299px) {
@@ -250,23 +250,23 @@ body {
     padding-bottom: 1rem;
   }
   .weather__header-title {
-    font-weight: 700;
     margin: 2rem 0;
     font-size: 1.6rem;
+    font-weight: 700;
   }
   .weather__header-input, .weather__header-button {
     font-size: 1.2rem;
   }
   .weather__header-warning {
-    text-align: center;
     margin: 0;
+    text-align: center;
   }
   .weather__main {
-    padding: 0;
+    justify-content: center;
     width: 98%;
     height: 70%;
-    justify-content: center;
     margin: 2rem 0;
+    padding: 0;
   }
   .weather__main .mobile {
     display: flex;
@@ -296,14 +296,14 @@ body {
     width: 10rem;
   }
   .weather__main-headings {
-    font-size: 1rem;
     flex-wrap: wrap;
+    font-size: 1rem;
     border: none;
     border-top: 3px solid #fff;
   }
   .weather__main-values {
-    font-size: 1.2rem;
     padding: 0 1rem;
+    font-size: 1.2rem;
   }
   .weather__main-values p {
     padding-bottom: 1rem;
